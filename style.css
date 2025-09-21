@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.fullbody{
+    /* border:2px solid red; */
+    display:flex;
+    flex-direction: column;
+    height: auto;
+}
+.border{
+    color: #E4E6EB;
+    /* border:2px solid gray; */
+}
 
 body{
     background-color: #0a0f1c;
@@ -21,7 +31,7 @@ body{
     align-items: center;
     height: 70px;
     /* border: 2px solid white; */
-    width : 90%;
+    width : 88.5%;
     background-color: rgb(10, 15, 28);
    margin-top: 1rem;
      z-index: 3;
@@ -41,11 +51,14 @@ body{
     text-decoration: none;
     color: #E4E6EB;
     opacity: 0.9;
+    transition: all 0.8s ease-in-out;
+    
 }
 
 .navbar a:hover{
     text-decoration: underline;
     opacity: 1;
+    transform: scale(1.1);
 }
 
 .resume{
@@ -59,21 +72,27 @@ body{
     font-weight: 700;
     position: relative;
     opacity:0.7;
+    transition: all 0.8s ease-in-out;
     /* left:700px */
 }
 
 .resume:hover{
     opacity:1;
     box-shadow: 0 0 2px #E4E6EB;
+    transform: scale(1.01);
+    cursor: pointer;
 }
 
 .hero{
-    position: absolute;
     margin-top: 5.6rem;
-    height: 35rem;
+    height: auto;
     scroll-margin-top: 5.6rem;
     width:90%;
     /* border:2px solid gray; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:4.22rem;
 }
 
 .intro p{
@@ -85,11 +104,8 @@ body{
 }
 
 .intro{
-    height: 260px;
+    height: auto;
     width: 600px;
-    position: absolute;
-    top:200px;
-    left:160px;
     
     
 }
@@ -114,66 +130,75 @@ body{
     border: 2px solid gray;
     height:450px;
     width:450px;
-    position: absolute;
-    top:50px;
-    right:50px;
     border-radius: 50%;
     
 }
 
 .about{
-    position:absolute;
-    top:45rem;
     /* border:2px solid white; */
-    height : 30rem;
+    
     width : 90%;
-    scroll-margin-top: 8rem;
+    /* scroll-margin-top: 8rem; */
+    display:flex;
+    flex-direction: column;
+    padding: 4.22rem;
+    height: auto; 
+    word-wrap: break-word; 
 
+}
+
+.innerdiv{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width :90%;
+    padding-left: 3rem;
+    height: auto;
 }
 
 .heading {
     font-size: 2.2rem;
     margin-top: 6rem;
-    margin-left: 165px;
+    margin-left: 9.16rem;
     color:#FF6B6B;
     
 }
 .aboutme{
-    height: 382px;
+    height:auto;
     width :536px;
-    position: absolute;
-    right: 11rem;
-    top:9rem;
+    /* position: absolute; */
+    /* right: 11rem; */
+    /* top:9rem; */
     line-height: 1.8rem;
     font-size: 1.2rem;
     color: gray;
+    margin-left: 1rem;
 }
 
 .about .img{
     height: 280px;
     width : 450px;
     border: 2px solid gray;
-    position: absolute;
+    /* position: absolute;
     left : 160px;
-    top: 10.8rem;
+    top: 10.8rem; */
     border-radius: 5%;
 }
 
 .skills{
     /* border:2px solid gray; */
-    height: 30rem;
+    height: auto;
     width: 90%;
-    position:absolute;
-    top:85rem;
-    scroll-margin-top: 8rem;
+    
+    padding: 4.22rem;
 }
 .skillcard{
     /* border: 2px solid gray; */
     height: 15rem;
     width: 13rem;
-    position: absolute;
-    
     transition: all 0.5s ease-in-out;
+    margin-right: 3rem;
+    margin-top:3rem;
    
 }
 
@@ -181,18 +206,14 @@ body{
      background: rgba(255, 255, 255, 0.13);
      cursor: pointer;
 }
-.card1{
-    left: 10.5rem;
+.cards{
+    display:flex;
+    /* border:2px solid yellow; */
+    padding-left: 9.16rem;
+    height: auto;
+    flex-wrap: wrap;
+    
 }
-.card2{
-    left:28rem;
-}
-.card3{
-    left:46rem;
-}
-
-
-
 .icon{
     font-size: 2rem;
     position:absolute;
@@ -205,6 +226,7 @@ body{
     left:1rem;
     top:4.5rem;
     font-size: 1rem;
+    
 }
 .glass {
   background: rgba(255, 255, 255, 0.1); /* transparent background */
@@ -217,23 +239,23 @@ body{
 }
 
 .project{
-     height: 40rem;
+     height: auto;
     width: 90%;
-    position:absolute;
-    top: 120rem;
+    
     /* border:2px solid gray; */
-    scroll-margin-top: 6rem;
+    /* scroll-margin-top: 6rem; */
+    padding: 4.22rem;
+    scroll-margin-top: -2rem;
 }
 .projectcard{
     height: 27rem;
     width: 23rem;
-    position: absolute;
-    left: 10.2rem;
-   
     display:flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-right: 3rem;
+    margin-top:3rem;
 }
 
 .projectcard:hover{
@@ -320,11 +342,12 @@ body{
     justify-content: space-between;
 }
 .contact{
-    height: 50rem;
+    height: auto;
     width: 90%;
     /* border:2px solid gray; */
-    position :absolute;
-    top:160rem;
+    display:flex;
+    flex-direction: column;
+    padding: 4.22rem;
 }
 
 
@@ -333,9 +356,7 @@ body{
 .contactdiv{
     height : 30rem;
     width : 35rem;
-    position : absolute;
-    left : 40rem;
-    top : 10em;
+    margin-left: 9.1rem;
     /* border:2px solid gray; */ 
 }
 .main{
@@ -408,15 +429,14 @@ body{
     
 }
 .fotter{
-    height: 12rem;
+    height: auto;
     width:90%;
     /* border:2px solid rgb(245, 244, 244); */
-    position: absolute;
-    top:212rem;
     display:flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    padding: 4.22rem;
 }
 .media{
     font-size: 2rem;
@@ -440,7 +460,10 @@ body{
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    width:60%;
+    width:auto;
+}
+.info p{
+    margin-right: 2rem;
 }
 .copyright .copy_info{
     display: flex;
