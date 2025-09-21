@@ -1,0 +1,369 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #0a0f1c;
+    color: #E4E6EB;
+    margin:0;
+    padding:0;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-family: sans-serif;
+    
+}
+
+.header{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* border: 2px solid white; */
+    width : 90%;
+    background-color: rgb(10, 15, 28);
+   margin-top: 1rem;
+     z-index: 3;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+.navbar{
+    width: 515px;
+    display:flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #E4E6EB;
+    opacity: 0.9;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.resume{
+    background-color: #FF6B6B;
+    width:161px;
+    height: 46px;
+    border:none;
+    border-radius: 0.7rem;
+    color:#E4E6EB;
+    font-size: 0.9rem;
+    font-weight: 700;
+    position: relative;
+    opacity:0.7;
+    /* left:700px */
+}
+
+.resume:hover{
+    opacity:1;
+    box-shadow: 0 0 2px #E4E6EB;
+}
+
+.hero{
+    position: absolute;
+    margin-top: 5.6rem;
+    height: 35rem;
+    scroll-margin-top: 5.6rem;
+    width:90%;
+    /* border:2px solid gray; */
+}
+
+.intro p{
+    font-size: 3rem;
+}
+
+.intro p span{
+    font-weight: 600;
+}
+
+.intro{
+    height: 260px;
+    width: 600px;
+    position: absolute;
+    top:200px;
+    left:160px;
+    
+    
+}
+.main{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+.subintro{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.pera{
+    display: flex;
+    margin-top: 19px;
+    line-height: 1.35rem;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+.image{
+    border: 2px solid gray;
+    height:450px;
+    width:450px;
+    position: absolute;
+    top:50px;
+    right:50px;
+    border-radius: 50%;
+    
+}
+
+.about{
+    position:absolute;
+    top:45rem;
+    /* border:2px solid white; */
+    height : 30rem;
+    width : 90%;
+    scroll-margin-top: 8rem;
+
+}
+
+.heading {
+    font-size: 2.2rem;
+    margin-top: 6rem;
+    margin-left: 165px;
+    color:#FF6B6B;
+    
+}
+.aboutme{
+    height: 382px;
+    width :536px;
+    position: absolute;
+    right: 11rem;
+    top:9rem;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.about .img{
+    height: 280px;
+    width : 450px;
+    border: 2px solid gray;
+    position: absolute;
+    left : 160px;
+    top: 10.8rem;
+    border-radius: 5%;
+}
+
+.skills{
+    /* border:2px solid gray; */
+    height: 30rem;
+    width: 90%;
+    position:absolute;
+    top:85rem;
+    scroll-margin-top: 8rem;
+}
+.skillcard{
+    /* border: 2px solid gray; */
+    height: 15rem;
+    width: 13rem;
+    position: absolute;
+    
+    transition: all 0.5s ease-in-out;
+   
+}
+
+.skillcard:hover{
+     background: rgba(255, 255, 255, 0.13);
+     cursor: pointer;
+}
+.card1{
+    left: 10.5rem;
+}
+.card2{
+    left:28rem;
+}
+.card3{
+    left:46rem;
+}
+
+
+
+.icon{
+    font-size: 2rem;
+    position:absolute;
+    left:1rem;
+    top:2.3rem;
+}
+
+.content{
+    position:absolute;
+    left:1rem;
+    top:4.5rem;
+    font-size: 1rem;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.1); /* transparent background */
+  backdrop-filter: blur(10px);          /* blur the background behind */
+  -webkit-backdrop-filter: blur(10px);  /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* light border */
+  border-radius: 15px;                  /* rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* subtle shadow */
+
+}
+
+.project{
+     height: 40rem;
+    width: 90%;
+    position:absolute;
+    top: 120rem;
+    /* border:2px solid gray; */
+    scroll-margin-top: 6rem;
+}
+.projectcard{
+    height: 23rem;
+    width: 19rem;
+    position: absolute;
+    left: 10.2rem;
+    transition: all 2s ease-in-out;
+}
+
+.contact{
+    height: 50rem;
+    width: 90%;
+    /* border:2px solid gray; */
+    position :absolute;
+    top:160rem;
+}
+
+
+    
+
+.contactdiv{
+    height : 30rem;
+    width : 35rem;
+    position : absolute;
+    left : 40rem;
+    top : 10em;
+    /* border:2px solid gray; */ 
+}
+.main{
+    display:flex;
+ 
+    height:5rem;
+    
+
+}
+
+.box{height:1.8rem;
+    width:15rem;
+    border:2px solid gray;
+    position:absolute;
+    top:2.4rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    color:#E4E6EB;
+    font-size: 1rem;
+}
+.container2{
+    position:absolute;
+    right:4rem;
+    height:2rem;
+    width:13rem;
+}
+.container1{
+    position:absolute;
+    left:1.8rem;
+}
+.tittle{
+    font-size: 1rem;
+}
+.main{
+    margin-top: 0.5rem;
+}
+.msg{
+    position:absolute;
+    top:6rem;
+    left:1.8rem;
+    width:25rem;
+    height: 11rem;
+}
+.msg:focus{
+    box-shadow: 0 0 px rgba(127, 255, 212, 0.408);
+}
+.send{
+    background-color: #FF6B6B;
+    position:absolute;
+    top:18.2rem;
+    left:1.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    height:2rem;
+    width:5.8rem;
+    color:#E4E6EB;
+    opacity:0.7;
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
+.send:hover{
+    opacity:1;
+    box-shadow: 0 0 2px #E4E6EB;
+}
+
+.sicon{
+    font-size:0.8rem;
+    
+}
+.fotter{
+    height: 12rem;
+    width:90%;
+    /* border:2px solid rgb(245, 244, 244); */
+    position: absolute;
+    top:212rem;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.media{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.icons{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid gray; */
+}
+.infodiv{
+    display:flex;
+    align-items: center;
+}
+.infoicon{
+    font-size: 1.3rem;
+    margin-right: 0.6rem;
+}
+.info{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+}
+.copyright .copy_info{
+    display: flex;
+    align-items: center;
+}
+.copyright{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:1rem;
+    margin-top: 2rem;
+}
