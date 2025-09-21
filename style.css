@@ -225,13 +225,100 @@ body{
     scroll-margin-top: 6rem;
 }
 .projectcard{
-    height: 23rem;
-    width: 19rem;
+    height: 27rem;
+    width: 23rem;
     position: absolute;
     left: 10.2rem;
-    transition: all 2s ease-in-out;
+   
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+.projectcard:hover{
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.546);
+}
+
+.pimg{
+    height:10rem;
+    width:20.18rem;
+    border-radius: 0.6rem;
+    background-image: url(dictionary.png);
+     background-size: cover;
+     filter: brightness(0.7);
+}
+
+.pcontent{
+    height:15rem;
+    width:19rem;
+    border-radius: 0.6rem;
+}
+
+.pheading{
+    font-size: 1.7rem;
+    font-family: Times New Roman, Times, serif;
+    margin-bottom: 0;
+
+}
+
+.pdiscription{
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    color:#E4E6EB
+}
+
+.stack{
+    font-weight: 100;
+    font-style: italic;
+}
+
+.demo{
+    background: transparent;
+    border:2px solid rgba(128, 128, 128,0.7);
+    border-radius: 0.5rem;
+    height:2.3rem;
+    width:7rem;
+    color:#E4E6EB;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: all 0.5s ease-in-out;
+}
+
+.demo:hover{
+    opacity: 1;
+    border:2px solid rgba(128, 128, 128,1);
+    box-shadow: 0 0 4px rgba(128, 128, 128,1);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.git{
+    background-color: #FF6B6B;
+     border-radius: 0.5rem;
+     height:2.3rem;
+     width:8rem;
+     border:none;
+     font-size: 1rem;
+     color:#E4E6EB;
+     font-weight: 500;
+     transition: all 0.5s ease-in-out;
+     opacity: 0.7;
+}
+
+.git:hover{
+    opacity:1;
+    box-shadow: 0 0 4px #E4E6EB;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.buttons{
+    display:flex;
+    justify-content: space-between;
+}
 .contact{
     height: 50rem;
     width: 90%;
