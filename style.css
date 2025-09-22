@@ -3,7 +3,7 @@ html {
 }
 
 .fullbody{
-    border:2px solid red;
+    /* border:2px solid red; */
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@ html {
 }
 .border{
     color: #E4E6EB;
-    border:2px solid gray;
+    /* border:2px solid gray; */
     padding: 3rem;
     scroll-margin-top:4rem;
 }
