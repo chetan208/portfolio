@@ -3,14 +3,17 @@ html {
 }
 
 .fullbody{
-    /* border:2px solid red; */
+    border:2px solid red;
     display:flex;
     flex-direction: column;
+    align-items: center;
     height: auto;
 }
 .border{
     color: #E4E6EB;
-    /* border:2px solid gray; */
+    border:2px solid gray;
+    padding: 3rem;
+    scroll-margin-top:4rem;
 }
 
 body{
@@ -18,8 +21,6 @@ body{
     color: #E4E6EB;
     margin:0;
     padding:0;
-    margin-left: 70px;
-    margin-right: 70px;
     font-family: sans-serif;
     
 }
@@ -92,11 +93,12 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding:4.22rem;
+    flex-wrap: wrap-reverse;
+    /* padding:4.22rem; */
 }
 
 .intro p{
-    font-size: 3rem;
+    font-size: clamp(39px,4vw,48px);
 }
 
 .intro p span{
@@ -105,8 +107,10 @@ body{
 
 .intro{
     height: auto;
-    width: 600px;
-    
+    width: clamp(300px,9vw,600px);
+    margin-left: 4rem;
+    padding-right: 7rem;
+    flex:1;
     
 }
 .main{
@@ -115,22 +119,24 @@ body{
 }
 .subintro{
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: clamp(1rem,2vw,1.3rem);
 }
 
 .pera{
     display: flex;
     margin-top: 19px;
     line-height: 1.35rem;
-    font-size: 1.1rem;
+    font-size: clamp(0.8rem,2vw,1rem);
     opacity: 0.7;
 }
 
 .image{
     border: 2px solid gray;
-    height:450px;
-    width:450px;
+    height:30vw;
+    width:clamp(250px,30vw,32rem);
+    height: clamp(250px,30vw,32rem);
     border-radius: 50%;
+    /* margin-right: 4rem; */
     
 }
 
@@ -141,7 +147,7 @@ body{
     /* scroll-margin-top: 8rem; */
     display:flex;
     flex-direction: column;
-    padding: 4.22rem;
+    /* padding: 4.22rem; */
     height: auto; 
     word-wrap: break-word; 
 
@@ -190,7 +196,7 @@ body{
     height: auto;
     width: 90%;
     
-    padding: 4.22rem;
+    /* padding: 4.22rem; */
 }
 .skillcard{
     /* border: 2px solid gray; */
@@ -244,7 +250,7 @@ body{
     
     /* border:2px solid gray; */
     /* scroll-margin-top: 6rem; */
-    padding: 4.22rem;
+    /* padding: 4.22rem; */
     scroll-margin-top: -2rem;
 }
 .projectcard{
@@ -347,16 +353,19 @@ body{
     /* border:2px solid gray; */
     display:flex;
     flex-direction: column;
-    padding: 4.22rem;
+    justify-content: space-between;
+    
+    
 }
 
 
     
 
 .contactdiv{
-    height : 30rem;
+    height : 25rem;
     width : 35rem;
     margin-left: 9.1rem;
+    margin-bottom: 6rem;
     /* border:2px solid gray; */ 
 }
 .main{
@@ -436,7 +445,7 @@ body{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    padding: 4.22rem;
+    /* padding: 4.22rem; */
 }
 .media{
     font-size: 2rem;
