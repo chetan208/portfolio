@@ -3,5 +3,26 @@
         padding-right: 0;
         margin-left: 0.5rem;
     }  
+}
+@media (max-width: 850px){
+    .header{
+        height:50px;
+        width: 80vw;
+    }
+    .navbar{
+        display: none;
+    }
+    .resume{
+        width:140px;
+        height: 40px;
+        display: none;
+    }
+    .bars{
+        display: flex;
+    }
+    
+        .baricon:hover{
+            transform: scale(1.2);
+        }
     
 }
