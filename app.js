@@ -32,3 +32,33 @@ let cross=document.querySelector(".cross");
 cross.addEventListener("click",()=>{
     hamberger.classList.remove("active");
 })
+
+
+let cards=document.querySelector(".cards");
+let arrow=document.querySelector(".arrow")
+
+
+function checkscrollable(){
+    if (cards.scrollWidth > cards.clientWidth) {
+    arrow.classList.remove("hide");
+  }
+else{
+    arrow.classList.add("hide");
+  }
+}
+
+checkscrollable();
+window.addEventListener('resize', checkscrollable);
+
+let isScrolling;
+
+cards.addEventListener('scroll', () => {
+  arrow.style.opacity = 0;
+  arrow.style.transform = 'translateX(20px)';
+  window.clearTimeout(isScrolling);
+  // set timer → agar scroll ruk gaya 200ms me, arrow show
+  isScrolling = setTimeout(() => {
+    arrow.style.opacity = 1;
+    arrow.style.transform = 'translateX(0)';
+  }, 200);  // 200ms after scroll stops
+});
