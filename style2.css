@@ -3,6 +3,9 @@
         padding-right: 0;
         margin-left: 0.5rem;
     }  
+    .about .img{
+        height:45vw;
+    }
 }
 @media (max-width: 850px){
     .header{
@@ -25,4 +28,13 @@
             transform: scale(1.2);
         }
     
+}
+@media (max-width:550px){
+    .innerdiv{
+       padding-left: 8vw; 
+    }
+    .aboutme{
+        margin-right: 0rem;
+        margin-left:0rem;
+    }
 }
