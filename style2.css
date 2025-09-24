@@ -6,6 +6,16 @@
     .about .img{
         height:45vw;
     }
+
+    .about .innerdiv{
+        padding-left: 1rem;
+    }
+    .cards{
+        padding-left: 0.9rem;
+    }
+    .heading{
+        margin-left: 1rem;
+    }
 }
 @media (max-width: 850px){
     .header{

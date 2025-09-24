@@ -297,7 +297,7 @@ body {
 .cards {
     display:flex;
     /* border:2px solid yellow; */
-    padding-left: 13vw;
+    padding-left: clamp(1rem,13vw,14rem);
     height: auto;
     flex-wrap: nowrap;
     flex-shrink: 0;
@@ -324,9 +324,7 @@ body {
     font-size: 1.8rem;
 }
 .arrow{
-    position: absolute;
-    right: 1rem;
-    top:8rem;
+   
     border: 2px solid gray;
     display: flex;
     justify-content: center;
@@ -340,6 +338,12 @@ body {
 
 
   
+}
+
+.skillarrow{
+    position: absolute;
+    right: 0rem;
+    top:8rem;
 }
 
 .icon {
@@ -396,14 +400,15 @@ body {
 }
 
 .projectcard {
-    height: 27rem;
-    width: 23rem;
+    height: clamp(22rem,30vw,27rem);
+    width: clamp(15rem,25vw,21rem);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-right: 3rem;
     margin-top: 3rem;
+    padding: 1rem;
 }
 
 .projectcard:hover {
@@ -412,44 +417,46 @@ body {
 }
 
 .pimg {
-    height: 10rem;
-    width: 20.18rem;
+    height: clamp(9.5rem,12vw,11rem);
+    width: clamp(15rem,23vw,20.18rem);
     border-radius: 0.6rem;
     background-image: url(dictionary.png);
     background-size: cover;
     filter: brightness(0.7);
+    flex:0 0 auto
 }
 
 .pcontent {
-    height: 15rem;
-    width: 19rem;
+    height: clamp(10rem,13vw,15rem);
+    width: clamp(15rem,25vw,18rem);
     border-radius: 0.6rem;
 }
 
 .pheading {
-    font-size: 1.7rem;
+    font-size: clamp(1.3rem,3vw,1.7rem);
     font-family: Times New Roman, Times, serif;
     margin-bottom: 0;
 
 }
 
 .pdiscription {
-    font-size: 1rem;
-    margin-top: 0.8rem;
+    font-size: clamp(0.8rem,1vw,1rem);
+    margin-top: clamp(0.4rem,1vw,0.8rem);
     color: #E4E6EB
 }
 
 .stack {
     font-weight: 100;
     font-style: italic;
+    font-size: clamp(0.8rem,1vw,1rem);
 }
 
 .demo {
     background: transparent;
     border: 2px solid rgba(128, 128, 128, 0.7);
     border-radius: 0.5rem;
-    height: 2.3rem;
-    width: 7rem;
+    height: clamp(2rem,3vw,2.3rem);
+    width: clamp(6.6rem,5vw,7rem);
     color: #E4E6EB;
     font-size: 1rem;
     font-weight: 500;
@@ -469,7 +476,7 @@ body {
     background-color: #FF6B6B;
     border-radius: 0.5rem;
     height: 2.3rem;
-    width: 8rem;
+    width: clamp(7rem,6vw,8rem);
     border: none;
     font-size: 1rem;
     color: #E4E6EB;
@@ -483,6 +490,13 @@ body {
     box-shadow: 0 0 4px #E4E6EB;
     transform: scale(1.01);
     cursor: pointer;
+}
+
+.projectarrow{
+    position: absolute;
+    right: 0rem;
+    top:14rem;
+
 }
 
 .buttons {

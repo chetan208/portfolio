@@ -33,32 +33,64 @@ cross.addEventListener("click",()=>{
     hamberger.classList.remove("active");
 })
 
+let options=document.querySelector(".options");
+options.addEventListener("click",()=>{
+          hamberger.classList.remove("active");
+})
 
-let cards=document.querySelector(".cards");
-let arrow=document.querySelector(".arrow")
+
+let skillcards=document.querySelector(".skillcards");
+let skillarrow=document.querySelector(".skillarrow")
+
+let projectcards=document.querySelector(".projectcards");
+let projectarrow=document.querySelector(".projectarrow")
 
 
-function checkscrollable(){
-    if (cards.scrollWidth > cards.clientWidth) {
-    arrow.classList.remove("hide");
+function checkskillscrollable(){
+    if (skillcards.scrollWidth > skillcards.clientWidth) {
+    skillarrow.classList.remove("hide");
   }
 else{
-    arrow.classList.add("hide");
+    skillarrow.classList.add("hide");
   }
 }
 
-checkscrollable();
-window.addEventListener('resize', checkscrollable);
+function checkprojectscrollable(){
+    if (projectcards.scrollWidth > projectcards.clientWidth) {
+    projectarrow.classList.remove("hide");
+  }
+else{
+    projectarrow.classList.add("hide");
+  }
+}
+checkskillscrollable();
+window.addEventListener('resize', checkskillscrollable);
+
+checkprojectscrollable();
+window.addEventListener('resize', checkprojectscrollable);
 
 let isScrolling;
 
-cards.addEventListener('scroll', () => {
-  arrow.style.opacity = 0;
-  arrow.style.transform = 'translateX(20px)';
+skillcards.addEventListener('scroll', () => {
+  skillarrow.style.opacity = 0;
+  skillarrow.style.transform = 'translateX(20px)';
   window.clearTimeout(isScrolling);
   // set timer → agar scroll ruk gaya 200ms me, arrow show
   isScrolling = setTimeout(() => {
-    arrow.style.opacity = 1;
-    arrow.style.transform = 'translateX(0)';
+    skillarrow.style.opacity = 1;
+    skillarrow.style.transform = 'translateX(0)';
   }, 200);  // 200ms after scroll stops
+});
+
+let isProjectCardScrolling;
+projectcards.addEventListener("scroll",() =>{
+  projectarrow.style.opacity=0;
+  projectarrow.style.transform='translateX(20px)';
+  window.clearTimeout(isProjectCardScrolling);
+  
+  isProjectCardScrolling =setTimeout(()=>{
+    projectarrow.style.opacity = 1;
+    projectarrow.style.transform = 'translateX(0)';
+  },200)
+
 });
