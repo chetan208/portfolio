@@ -65,19 +65,19 @@
 @media (max-width:650px) {
     .contactdiv {
         height: clamp(30rem, 45vw, 27rem);
-        width: clamp(17rem, 70vw, 35rem);
+        width: clamp(16rem, 75vw, 35rem);
 
     }
 
     .msg {
-        width: clamp(14rem, 60vw, 30rem);
+        width: clamp(14rem, 65vw, 30rem);
         height: 11rem;
         margin-left: 1rem;
         margin-bottom: 0;
     }
 
     .db {
-        width: clamp(14rem, 60vw, 30rem);
+        width: clamp(14rem, 65vw, 30rem);
 
     }
 
