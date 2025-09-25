@@ -1,50 +1,92 @@
-@media(max-width:450px){
-    .intro{
+@media(max-width:450px) {
+    .intro {
         padding-right: 0;
         margin-left: 0.5rem;
-    }  
-    .about .img{
-        height:45vw;
     }
 
-    .about .innerdiv{
+    .about .img {
+        height: 45vw;
+    }
+
+    .about .innerdiv {
         padding-left: 1rem;
     }
-    .cards{
+
+    .cards {
         padding-left: 0.9rem;
     }
-    .heading{
+
+    .heading {
+        margin-left: 1rem;
+    }
+
+    .contactdiv {
         margin-left: 1rem;
     }
 }
-@media (max-width: 850px){
-    .header{
-        height:50px;
+
+@media (max-width: 850px) {
+    .header {
+        height: 50px;
         width: 80vw;
     }
-    .navbar{
+
+    .navbar {
         display: none;
     }
-    .resume{
-        width:140px;
+
+    .resume {
+        width: 140px;
         height: 40px;
         display: none;
     }
-    .bars{
+
+    .bars {
         display: flex;
     }
-    
-        .baricon:hover{
-            transform: scale(1.2);
-        }
-    
-}
-@media (max-width:550px){
-    .innerdiv{
-       padding-left: 8vw; 
+
+    .baricon:hover {
+        transform: scale(1.2);
     }
-    .aboutme{
+
+}
+
+@media (max-width:550px) {
+    .innerdiv {
+        padding-left: 8vw;
+    }
+
+    .aboutme {
         margin-right: 0rem;
-        margin-left:0rem;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width:650px) {
+    .contactdiv {
+        height: clamp(30rem, 45vw, 27rem);
+        width: clamp(17rem, 70vw, 35rem);
+
+    }
+
+    .msg {
+        width: clamp(14rem, 60vw, 30rem);
+        height: 11rem;
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    .db {
+        width: clamp(14rem, 60vw, 30rem);
+
+    }
+
+    .main {
+        margin-left: 1rem;
+    }
+
+    .send {
+        margin-left: 1rem;
+        margin-top: 0rem;
     }
 }
