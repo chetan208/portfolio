@@ -49,6 +49,12 @@
         transform: scale(1.2);
     }
 
+    .info{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
 }
 
 @media (max-width:550px) {

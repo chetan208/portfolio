@@ -621,6 +621,7 @@ body {
     /* justify-content: center; */
     align-items: center;
     /* padding: 4.22rem; */
+    
 }
 
 .media {
@@ -638,6 +639,7 @@ body {
 .infodiv {
     display: flex;
     align-items: center;
+    font-size: clamp(0.9rem ,1vw,1rem);
 }
 
 .infoicon {
@@ -650,10 +652,12 @@ body {
     display: flex;
     justify-content: space-between;
     width: auto;
+    
 }
 
 .info p {
     margin-right: 2rem;
+
 }
 
 .copyright .copy_info {
@@ -662,10 +666,11 @@ body {
 }
 
 .copyright {
-    width: 90%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 1rem;
     margin-top: 2rem;
+    
 }
