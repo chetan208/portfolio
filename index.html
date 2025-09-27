@@ -190,23 +190,24 @@
 
                 <div class="main">
                     <div class="container1">
-                        <p class="name tittle">Name</p>
-                        <input type="text" placeholder="Your Name" class="box db" />
+                        <p class="name tittle" >Name</p>
+                        <input type="text" placeholder="Your Name" class="box db" id="name"/>
                     </div>
 
                     <div class="container2">
                         <p class="email tittle">Email</p>
-                        <input type="email" placeholder="example@gmail.com" class="box db" />
+                        <input type="email" placeholder="example@gmail.com" class="box db" id="email" />
                     </div>
                 </div>
 
                <div class="msgcontainer">
-                 <textarea id="message" name="message" rows="6" cols="50" placeholder="Type your message here..."
-                    class="box msg"></textarea><br><br>
-                <button class="send">
+                 <textarea id="message"  rows="6" cols="50" placeholder="Type your message here..."
+                    class="box msg" id="message"></textarea><br><br>
+                <button class="send" id="send-btn">
                     Send
                     <i class="fa-solid fa-paper-plane sicon"></i>
                 </button>
+                <div id="status" style="margin-top:10px; color:green;"></div>
                </div>
             </div>
         </div>
@@ -249,8 +250,10 @@
 
         </div>
     </div>
-
+     
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="app.js"></script>
+    
 </body>
 
 </html>

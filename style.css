@@ -13,7 +13,7 @@ html {
 .border {
     color: #E4E6EB;
     /* border: 2px solid gray; */
-    padding: 3rem;
+    padding: clamp(0.8rem,3vw,3rem);
     scroll-margin-top: 4rem;
 }
 
@@ -614,7 +614,7 @@ body {
 
 .fotter {
     height: auto;
-    width: 90%;
+    width: 85vw;
     /* border:2px solid rgb(245, 244, 244); */
     display: flex;
     flex-direction: column;
@@ -627,10 +627,18 @@ body {
 .media {
     font-size: 2rem;
     margin-right: 1rem;
+    opacity: 0.7;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.media:hover{
+    opacity: 1;
+    transform: scale(1.01);
 }
 
 .icons {
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     /* border: 2px solid gray; */
