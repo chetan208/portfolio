@@ -648,6 +648,7 @@ body {
     display: flex;
     align-items: center;
     font-size: clamp(0.9rem ,1vw,1rem);
+    cursor: pointer;
 }
 
 .infoicon {

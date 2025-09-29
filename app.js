@@ -104,6 +104,8 @@ const sendBtn = document.getElementById('send-btn');
 const statusDiv = document.getElementById('status');
 
 sendBtn.addEventListener('click', function () {
+  statusDiv.classList.add("showmsg");
+  statusDiv.innerText="Sending...";
   // 3) Collect input values manually
   const templateParams = {
     user: document.getElementById('name').value,   // template me {{user}}
@@ -113,14 +115,60 @@ sendBtn.addEventListener('click', function () {
 
   // 4) Send email via EmailJS
   emailjs.send('service_i0ougds', 'template_71utzbz', templateParams)
+      
     .then(function (response) {
-      statusDiv.innerText = 'Message sent successfully!';
-      // Optional: clear input boxes
+      statusDiv.classList.remove("showmsg");
+      setTimeout(()=>{
+        statusDiv.classList.add("showmsg");
+        statusDiv.innerText="Message sent successfully!";
+      },1000);
+      
+      
       document.getElementById('name').value = '';
       document.getElementById('email').value = '';
       document.getElementById('message').value = '';
+
+      setTimeout(()=>{
+        statusDiv.classList.remove("showmsg");
+      },3000);
     }, function (error) {
       console.error('FAILED...', error);
       statusDiv.innerText = 'Error sending message.';
     });
 });
+
+let insta=document.querySelector(".insta");
+insta.addEventListener("click",()=>{
+  window.open("https://www.instagram.com/chetan__nith?igsh=ZHpyeWhnejR2aXgx","_blank");
+})
+
+let linkedin=document.querySelector(".linkedin");
+linkedin.addEventListener("click",()=>{
+  window.open("https://www.linkedin.com/in/chetan-nith-6218b3329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ","_blank");
+})
+
+let github=document.querySelector(".github");
+github.addEventListener("click",()=>{
+  window.open("https://github.com/chetan208","_blank");
+})
+
+let l=document.querySelector(".location");
+l.addEventListener("click",()=>{
+  window.open("https://www.google.com/maps/place/Nagrota+Bagwan,+Himachal+Pradesh+176047/@32.1085734,76.3738735,4052m/data=!3m1!1e3!4m6!3m5!1s0x391b4c317292f6d5:0x7986b64ab27a0248!8m2!3d32.1053971!4d76.3789037!16zL20vMGY1cXpk?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D","_blank");
+
+})
+
+const emailDiv = document.querySelector(".emailDiv");
+
+  emailDiv.addEventListener("click", () => {
+    const email = "chetanchoudhary435@gmail.com"; // yahan apna email daale
+    window.location.href = `mailto:${email}`;
+  });
+
+
+const callDiv = document.getElementById("callDiv");
+  
+  callDiv.addEventListener("click", () => {
+    const phone = "+917018152657";
+    window.location.href = `tel:${phone}`;
+  });
