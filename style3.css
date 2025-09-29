@@ -1,3 +1,9 @@
+div {
+  -webkit-tap-highlight-color: transparent; /* removes tap highlight on mobile */
+}
+
+
+
 .hide{
     display:none;
 }
