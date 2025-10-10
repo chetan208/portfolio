@@ -29,6 +29,8 @@
     .header {
         height: 50px;
         width: 80vw;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .navbar {
@@ -44,6 +46,9 @@
     .bars {
         display: flex;
     }
+    .myportfolio{
+        display:block;
+    }
 
     .baricon:hover {
         transform: scale(1.2);
@@ -55,6 +60,11 @@
         justify-content: start;
     }
 
+    .hero .image{
+         margin-left: 0;
+         margin-left: clamp(0rem,5vw,4rem);
+    }
+    
 }
 
 @media (max-width:550px) {
@@ -69,6 +79,15 @@
 }
 
 @media (max-width:650px) {
+    .pera{
+        margin-left: 1rem;
+    }
+    .subintro{
+        margin-left: 1rem;
+    }
+    .extraCVbutton{
+         margin-left: 1rem;
+    }
     .contactdiv {
         height: clamp(30rem, 45vw, 27rem);
         width: clamp(16rem, 75vw, 35rem);

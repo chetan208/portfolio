@@ -52,6 +52,15 @@ body {
 
 .bars {
     display: none;
+
+}
+
+.myportfolio{
+    font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  display:none;
 }
 
 .bars .baricon {
@@ -60,29 +69,32 @@ body {
 }
 
 .hamberger {
-    height: 20rem;
+    height: auto;
     background-color: #0a0f1c;
     width: 13rem;
     /* border:2px solid gray; */
     position: absolute;
-    top: -20rem;
-    left: -20rem;
+    top: 0rem;
+    right: 0rem;
     border-radius: 1rem;
     transition: all 0.3s ease-in;
     box-shadow: 0 0 1px white;
+    display:none;
+    padding-bottom: 2rem;
 }
 
 .active {
-    position: absolute;
-    left: 0rem;
-    top: 0rem;
+    
+    display: block;
 }
 
 .cross {
     font-size: 1.5rem;
 
 }
-
+.cross:hover{
+    font-size: 1.7rem;
+}
 .cross:active {
     font-size: 1.7rem;
 }
@@ -101,7 +113,7 @@ body {
 
 .options {
     /* border:2px solid gray; */
-    height: 15rem;
+    height: 12rem;
     width: 80%;
     margin-top: 2.5rem;
     margin-left: 1rem;
@@ -115,7 +127,7 @@ body {
     text-decoration: none;
     color: #E4E6EB;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .navbar a {
@@ -185,21 +197,28 @@ body {
 }
 
 .main {
-    font-size: 1.4rem;
+    
     margin-bottom: 0;
+    margin-left: 0rem;
+}
+.myintro{
+font-size:clamp(2rem,10vw,3rem);
 }
 
 .subintro {
     margin-top: 10px;
     font-size: clamp(1rem, 2vw, 1.3rem);
+    margin-left: 1.9rem;
 }
 
 .pera {
     display: flex;
     margin-top: 19px;
     line-height: 1.35rem;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.9rem, 3vw, 1rem);
     opacity: 0.7;
+    width:clamp(15rem,40vw,40rem);
+    margin-left: 1.9rem;
 }
 
 .image {
@@ -209,9 +228,40 @@ body {
     height: clamp(250px, 30vw, 32rem);
     border-radius: 50%;
     /* margin-right: 4rem; */
+    background-image: url('me.jpg');
+    background-size: cover; 
+    background-position: -3px -29px; /* x = 100px, y = 50px */
+    margin-right: clamp(0rem,5vw,8rem);
 
 }
 
+/* .extraCV{
+    border:2px solid gray;
+    height: 70px;
+    width: 90vw;
+
+} */
+.extraCVbutton{
+     background-color: #FF6B6B;
+    width: clamp(140px,20vw,161px);
+    height: 46px;
+    border: none;
+    border-radius: 0.5rem;
+    color: #E4E6EB;
+    font-size: 0.9rem;
+    font-weight: 700;
+    position: relative;
+    opacity: 0.7;
+    transition: all 0.8s ease-in-out;
+    margin-top:2rem;
+    margin-left: 1.9rem;
+}
+.extraCVbutton:hover{
+    opacity: 1;
+    box-shadow: 0 0 2px #E4E6EB;
+    transform: scale(1.01);
+    cursor: pointer;
+}
 .about {
     /* border:2px solid white; */
 
