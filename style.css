@@ -336,12 +336,32 @@ font-size:clamp(2rem,10vw,3rem);
     margin-right: 3rem;
     margin-top: 3rem;
     flex: 0 0 auto; 
-
+    overflow: hidden;
 }
 
 .skillcard:hover {
     background: rgba(255, 255, 255, 0.13);
     cursor: pointer;
+    
+}
+
+.skillcard::before{
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.skillcard:hover::before {
+  opacity: 0.9;
 }
 
 .cards {
@@ -397,7 +417,7 @@ font-size:clamp(2rem,10vw,3rem);
 }
 
 .icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
     position: absolute;
     left: 1rem;
     top: 2.3rem;
@@ -406,7 +426,7 @@ font-size:clamp(2rem,10vw,3rem);
 .content {
     position: absolute;
     left: 1rem;
-    top: 4.5rem;
+    top: 5rem;
     font-size: 1rem;
 
 }

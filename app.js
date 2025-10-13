@@ -172,3 +172,22 @@ const callDiv = document.getElementById("callDiv");
     const phone = "+917018152657";
     window.location.href = `tel:${phone}`;
   });
+
+
+
+
+document.querySelectorAll('.skillcard').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--x', `${x}px`);
+    card.style.setProperty('--y', `${y}px`);
+  });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.setProperty('--x', `-9999px`);
+    card.style.setProperty('--y', `-9999px`);
+  });
+});
+
