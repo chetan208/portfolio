@@ -10,6 +10,20 @@ gitbutton1.addEventListener("click", () => {
   window.open("https://github.com/chetan208/dictionary", "_blank");
 })
 
+
+let gitbutton2 = document.querySelector(".gitbutton2");
+let viewdemo2= document.querySelector(".viewdemo2");
+let projectcard2 = document.querySelector(".projectcard2");
+
+projectcard2.addEventListener("click", () => {
+  window.open("https://mindtap.netlify.app/", "_blank");
+})
+
+gitbutton2.addEventListener("click", () => {
+  window.open("https://github.com/chetan208/MindTap", "_blank");
+})
+
+
 let baricon = document.querySelector(".baricon");
 let hamberger = document.querySelector(".hamberger");
 let header = document.querySelector(".header");

@@ -29,3 +29,22 @@ div {
   opacity: 1 !important;
   transform: translateY(2);
 } */
+
+
+/* Target the whole page */
+::-webkit-scrollbar {
+  width: 12px;               /* width of the scrollbar */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background:  #0a0f1c;       /* light grey background */
+  border-radius: 10px; 
+  opacity: 1;
+}
+
+/* Thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background:  #252a34;     
+  border-radius: 10px;
+}
