@@ -333,17 +333,13 @@ font-size:clamp(2rem,10vw,3rem);
     height: clamp(13rem, 25vw, 15rem);
     width: clamp(11rem, 20vw, 13rem);
     transition: all 0.5s ease-in-out;
-    margin-right: 3rem;
+    margin-right: clamp(1.2rem,4vw,3rem);
     margin-top: 3rem;
     flex: 0 0 auto; 
     overflow: hidden;
+    margin-left: 0rem;
 }
 
-.skillcard:hover {
-    background: rgba(255, 255, 255, 0.13);
-    cursor: pointer;
-    
-}
 
 .skillcard::before{
   content: "";
@@ -479,11 +475,29 @@ font-size:clamp(2rem,10vw,3rem);
     margin-right: 3rem;
     margin-top: 3rem;
     padding: 1rem;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.projectcard:hover {
-    cursor: pointer;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.546);
+
+
+.projectcard::before{
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.projectcard:hover::before {
+  opacity: 0.9;
 }
 
 .pimg {
@@ -506,6 +520,8 @@ font-size:clamp(2rem,10vw,3rem);
     font-size: clamp(1.3rem,3vw,1.7rem);
     font-family: Times New Roman, Times, serif;
     margin-bottom: 0;
+    color:#4DB6AC;
+
 
 }
 
@@ -586,7 +602,7 @@ font-size:clamp(2rem,10vw,3rem);
 }
 
 
-
+ 
 
 .contactdiv {
     height: clamp(30rem,45vw,27rem);
